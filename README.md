@@ -123,5 +123,5 @@ Usage:
 
  `python active_learning_for_images.py --directory=DIRECTORY_OF_IMAGES` 
  
-Where `DIRECTORY_OF_IMAGES` is the directory containing the JPGs you want apply Active Learning to. 
+Where `DIRECTORY_OF_IMAGES` is the directory containing the JPGs you want to apply Active Learning to. 
 
