@@ -22,7 +22,13 @@ This is a real-world situation that occurs regularly. For this exercise, we will
 
 ImageNet uses a classification scheme based on WordNet, where words are grouped by synonyms, called 'synsets'. Each 'synset' is a group of closely related words. These synsets are the labels for this task, which you will see when you run the code. For example, the label for 'racing car' is `'racer, race car, racing car'`.
 
-WordNet organizes the synsets in hierarchies. For example 'baseball' and 'cricket' could be types of 'sport', and in turn 'sport' could be a type of 'activity'. Generally, items that are closer in the hierarchy tend to be closer in real-life. For example, 'sports car' and 'racing car' are both types of 'cars' in WordNet/ImageNet, and are also closely related in real-life. By contrast, 'sports car' and 'pine tree' are not closely related in WordNet/ImageNet, or in real-life.
+The output from the classifier will therefore look something like this:
+
+`['candle, taper, wax light', 0.079653569], ['wreck', 0.055132806], ['tow truck, tow car, wrecker', 0.038218945], ...`
+
+This indicates that the image being classified has a 0.07965 probability of being a `'candle, taper, wax light'`, a 0.05513 probability of being a `'wreck'`, etc. 
+
+While the classifier is flat, WordNet itself organizes the synsets in hierarchies. For example 'baseball' and 'cricket' could be types of 'sport', and in turn 'sport' could be a type of 'activity'. Generally, items that are closer in the hierarchy tend to be closer in real-life. For example, 'sports car' and 'racing car' are both types of 'cars' in WordNet/ImageNet, and are also closely related in real-life. By contrast, 'sports car' and 'pine tree' are not closely related in WordNet/ImageNet, or in real-life.
 
  
 ## Getting started 
