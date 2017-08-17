@@ -69,24 +69,29 @@ You may use any resources that are available to you on your machine or on the in
 
 ### Coding Exercise
 
-Reimplement `order_images_for_active_learning()` so that it has a better strategy to determine which images will be the most valuable to classify. Consider the following:
- 1. Select images that are hard for the current TensorFlow model to classify
- 1. Select images that seem unknown to the current TensorFlow model
- 1. Select images that cover as broad a selection of labels as possible
+Reimplement `order_images_for_active_learning()` so that it has a better strategy to determine which images will be the most valuable to classify. Your strategy should identify images as highly valuable if are one or more of the following:
+ 1. Images that seem unknown to the current TensorFlow model - this means that they are likely to be the most different from those in the ImageNet training data.
+ 1. Images that are hard for the current TensorFlow model to classify - this means that they are likely to be images that would produce errors.
+ 1. Images that cover as broad a selection of labels as possible - the customer wants the model to be accurate across all the labels that they care about.
+ 1. Images that help with evaluation - the customer wants to be certain that they can correctly measure the accuracy of their models.
 
-### Written Exercise
+Aim to have working code. It's likely that you won't have time to implement everything that you would like, so the writing exercise allows you to talk about the other strategies that you thought about:
 
-Write a 1-paragraph description of what you implemented in the coding exercise, justifying each decision. There are many possible solutions that can be implemented in about 60 minutes, so the evaluation is more about your reasoning than your exact strategy.
+### Writing Exercise
 
-Please also write a few paragraphs or bullet points covering other strategies that you might try if you had more time, covering: 
+For the writing exercsie, pretend like you are addressing the customer about what you have implemented and what you are proposing to build. You can keep the style casual: assume it's a professional email sent to their technical team, not a formal proposal for their executives.
+
+First, write a 1-paragraph description of what you implemented in the coding exercise, justifying each decision. There are many possible solutions that can be implemented in about 60 minutes, so this is more about your reasoning than your exact strategy.
+
+Second, please write a few paragraphs or bullet points proposing other strategies that you might with the customer, covering: 
  1. How else could you ensure that you covered as broad a selection of images as possible?
  1. What kind of user interfaces could a human annotator use to manually add the labels efficiently and accurately? 
  1. How would you retrain the model with the newly labelled images, and what might be the pros and cons of retraining TensorFlow on the newly labeled images very frequently vs training only a few times or even just once?
  1. How would you evaluate the effectiveness of your strategies to see what worked best?
 
-### Submitting the Exercise
+### Submitting the 2 Hour Exercise
 
-Please email the updated code and written responses to the instructor when you are complete.
+Please email the updated code and written exercise to the instructor when you are complete.
  
 
 # Installation and code source
