@@ -57,7 +57,7 @@ Most of the code to be edited is within `order_images_for_active_learning()`, bu
 
 # Potential Solutions
  
-There are many extensions to this code, from a 1 hour exercise to improve how confidence is used to order the images, to a multiple week exercice that could included retraining all/parts of the model and providing interfaces that are optimal for different kinds of human labeling.
+There are many extensions to this code, from a 1 hour exercise to improve how confidence is used to order the images, to a multiple week exercise that could included retraining all/parts of the model and providing interfaces that are optimal for different kinds of human labeling.
 
 ## 2 Hour Exercise
 
@@ -79,7 +79,7 @@ Aim to have working code. It's likely that you won't have time to implement ever
 
 ### Writing Exercise
 
-For the writing exercsie, pretend like you are addressing the customer about what you have implemented and what you are proposing to build. You can keep the style casual: assume it's a professional email sent to their technical team, not a formal proposal for their executives.
+For the writing exercise, pretend like you are addressing the customer about what you have implemented and what you are proposing to build. You can keep the style casual: assume it's a professional email sent to their technical team, not a formal proposal for their executives.
 
 First, write a 1-paragraph description of what you implemented in the coding exercise, justifying each decision. There are many possible solutions that can be implemented in about 60 minutes, so this is more about your reasoning than your exact strategy.
 
